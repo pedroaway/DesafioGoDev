@@ -1,10 +1,15 @@
-import PySimpleGUI as sg
+arrai = ['1', '2', '3']
 
-class telasalas:
-    def __init__(self):
-##layout
-        layout = [
-            [sg.Text("lotação"), sg.Input()]
-            
+sala1 = []
+sala2 = []
 
-        ]
+
+def SepararParticipantes():
+    if len(sala1) < len(sala2):
+        sala1.append(aluno)
+
+
+SepararParticipantes()
+
+
+print(arrai)
