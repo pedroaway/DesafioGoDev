@@ -79,7 +79,7 @@
         <widget class="QLabel" name="label">
          <property name="geometry">
           <rect>
-           <x>150</x>
+           <x>200</x>
            <y>10</y>
            <width>221</width>
            <height>20</height>
@@ -177,7 +177,7 @@ QPushButton:hover{
           </property>
           <property name="text">
            <string>CADASTRAR 
-SALAS</string>
+PARTICIPANTES</string>
           </property>
          </widget>
          <widget class="QPushButton" name="botao2">
@@ -201,7 +201,7 @@ QPushButton:hover{
 }</string>
           </property>
           <property name="text">
-           <string>CADASTRAR 
+           <string>CONSULTAR 
 PARTICIPANTES</string>
           </property>
          </widget>
@@ -279,6 +279,68 @@ QPushButton:hover{
            <string>INFORMAÇÕES
 GERAIS</string>
           </property>
+         </widget>
+        </widget>
+        <widget class="QStackedWidget" name="TELAS">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>0</y>
+           <width>451</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="page1">
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>461</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white</string>
+           </property>
+           <property name="text">
+            <string>CADASTRAR PARTICIPANTES</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page2">
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>441</width>
+             <height>351</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white</string>
+           </property>
+           <property name="text">
+            <string>CONSULTAR PARTICIPANTES</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </widget>
         </widget>
        </widget>
