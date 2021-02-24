@@ -85,8 +85,14 @@
            <height>20</height>
           </rect>
          </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
-          <string notr="true">color:white</string>
+          <string notr="true">
+color: rgb(182, 182, 182);</string>
          </property>
          <property name="text">
           <string>CONTROLADOR DE EVENTOS</string>
@@ -101,7 +107,7 @@
            <x>0</x>
            <y>0</y>
            <width>101</width>
-           <height>51</height>
+           <height>41</height>
           </rect>
          </property>
          <property name="font">
@@ -226,7 +232,7 @@ QPushButton:hover{
 }</string>
           </property>
           <property name="text">
-           <string>CONSULTAR
+           <string>CADASTRAR
 SALAS</string>
           </property>
          </widget>
@@ -252,7 +258,7 @@ QPushButton:hover{
           </property>
           <property name="text">
            <string>CONSULTAR
- PARTICIPANTES</string>
+SALAS</string>
           </property>
          </widget>
          <widget class="QPushButton" name="botao5">
@@ -290,55 +296,276 @@ GERAIS</string>
            <height>361</height>
           </rect>
          </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::NoContextMenu</enum>
+         </property>
          <widget class="QWidget" name="page1">
-          <widget class="QLabel" name="label_3">
+          <widget class="QFrame" name="frame">
            <property name="geometry">
             <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>461</width>
-             <height>371</height>
+             <x>-1</x>
+             <y>-1</y>
+             <width>451</width>
+             <height>361</height>
             </rect>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-            </font>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
            </property>
-           <property name="styleSheet">
-            <string notr="true">color:white</string>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
            </property>
-           <property name="text">
-            <string>CADASTRAR PARTICIPANTES</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>90</y>
+              <width>291</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetMinAndMaxSize</enum>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:#FFF</string>
+               </property>
+               <property name="text">
+                <string>NOME:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_8">
+               <property name="styleSheet">
+                <string notr="true">background-color:#fff</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:#FFF</string>
+               </property>
+               <property name="text">
+                <string>SOBRENOME:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_9">
+               <property name="styleSheet">
+                <string notr="true">background-color:#fff
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="botao4_5">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color:rgb(13, 9, 22);
+	color:white;
+	border:1px solid;
+}
+QPushButton:hover{
+	background-color:rgb(255,255,0);
+	color:black;
+}</string>
+               </property>
+               <property name="text">
+                <string>REGISTAR</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
          </widget>
          <widget class="QWidget" name="page2">
-          <widget class="QLabel" name="label_4">
+          <widget class="QFrame" name="frame_2">
            <property name="geometry">
             <rect>
-             <x>10</x>
-             <y>0</y>
-             <width>441</width>
-             <height>351</height>
+             <x>-1</x>
+             <y>-1</y>
+             <width>451</width>
+             <height>361</height>
             </rect>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-            </font>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
            </property>
-           <property name="styleSheet">
-            <string notr="true">color:white</string>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
            </property>
-           <property name="text">
-            <string>CONSULTAR PARTICIPANTES</string>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page3">
+          <widget class="QFrame" name="frame_3">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>-1</y>
+             <width>451</width>
+             <height>361</height>
+            </rect>
            </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>110</y>
+              <width>291</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetMinAndMaxSize</enum>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:#FFF</string>
+               </property>
+               <property name="text">
+                <string>NOME:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_10">
+               <property name="styleSheet">
+                <string notr="true">background-color:#fff</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:#FFF</string>
+               </property>
+               <property name="text">
+                <string>SOBRENOME:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_11">
+               <property name="styleSheet">
+                <string notr="true">background-color:#fff
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="botao4_6">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color:rgb(13, 9, 22);
+	color:white;
+	border:1px solid;
+}
+QPushButton:hover{
+	background-color:rgb(255,255,0);
+	color:black;
+}</string>
+               </property>
+               <property name="text">
+                <string>REGISTAR</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page4">
+          <widget class="QFrame" name="frame_4">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>-1</y>
+             <width>451</width>
+             <height>361</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page5">
+          <widget class="QFrame" name="frame_5">
+           <property name="geometry">
+            <rect>
+             <x>-1</x>
+             <y>-1</y>
+             <width>451</width>
+             <height>361</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
            </property>
           </widget>
          </widget>
