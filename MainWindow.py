@@ -55,8 +55,8 @@ class MainWindow:
     def informacoes1(self):
         nomeparticipante = self.ui.lineEdit_8.text()
         sobrenomeparticipante = self.ui.lineEdit_9.text()
-        print(nomeparticipante)
-        print(sobrenomeparticipante)
+        return (nomeparticipante, sobrenomeparticipante)
+
 
 ###FUNÇÕES QUE CONECTAM OS BOTÕES COM AS PÁGINAS E FAZEM A MUDANÇA
     def show(self):
