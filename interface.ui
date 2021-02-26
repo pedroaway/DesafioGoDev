@@ -204,6 +204,10 @@ PARTICIPANTES</string>
 QPushButton:hover{
 	background-color:rgb(255,255,0);
 	color:black;
+}
+QPushButton:hover:enabled
+{
+  border: 1px solid red;
 }</string>
           </property>
           <property name="text">
@@ -315,80 +319,17 @@ GERAIS</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <widget class="QWidget" name="layoutWidget">
+           <widget class="QPushButton" name="botao4_5">
             <property name="geometry">
              <rect>
-              <x>60</x>
-              <y>90</y>
-              <width>291</width>
-              <height>141</height>
+              <x>130</x>
+              <y>180</y>
+              <width>196</width>
+              <height>15</height>
              </rect>
             </property>
-            <layout class="QGridLayout" name="gridLayout_2">
-             <property name="sizeConstraint">
-              <enum>QLayout::SetMinAndMaxSize</enum>
-             </property>
-             <property name="rightMargin">
-              <number>3</number>
-             </property>
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_11">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color:#FFF</string>
-               </property>
-               <property name="text">
-                <string>NOME:</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QLineEdit" name="lineEdit_8">
-               <property name="styleSheet">
-                <string notr="true">background-color:#fff</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_12">
-               <property name="font">
-                <font>
-                 <pointsize>11</pointsize>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">color:#FFF</string>
-               </property>
-               <property name="text">
-                <string>SOBRENOME:</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QLineEdit" name="lineEdit_9">
-               <property name="styleSheet">
-                <string notr="true">background-color:#fff
-</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QPushButton" name="botao4_5">
-               <property name="styleSheet">
-                <string notr="true">QPushButton{
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
 	background-color:rgb(13, 9, 22);
 	color:white;
 	border:1px solid;
@@ -397,13 +338,85 @@ QPushButton:hover{
 	background-color:rgb(255,255,0);
 	color:black;
 }</string>
-               </property>
-               <property name="text">
-                <string>REGISTAR</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
+            </property>
+            <property name="text">
+             <string>REGISTAR</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_8">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>98</y>
+              <width>196</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#fff</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_9">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>139</y>
+              <width>196</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#fff
+</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>39</x>
+              <y>98</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>NOME:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>39</x>
+              <y>139</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SOBRENOME:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
           </widget>
          </widget>
@@ -423,6 +436,114 @@ QPushButton:hover{
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="QLineEdit" name="lineEdit_12">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>110</y>
+              <width>196</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#fff</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="botao4_7">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>140</y>
+              <width>196</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color:rgb(13, 9, 22);
+	color:white;
+	border:1px solid;
+}
+QPushButton:hover{
+	background-color:rgb(255,255,0);
+	color:black;
+}</string>
+            </property>
+            <property name="text">
+             <string>CONSULTAR</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_13">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>80</y>
+              <width>196</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#fff</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_15">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>110</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SOBRENOME</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>80</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>NOME:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>180</y>
+              <width>331</width>
+              <height>131</height>
+             </rect>
+            </property>
+           </widget>
           </widget>
          </widget>
          <widget class="QWidget" name="page3">
@@ -444,24 +565,24 @@ QPushButton:hover{
            <widget class="QWidget" name="layoutWidget_2">
             <property name="geometry">
              <rect>
-              <x>70</x>
-              <y>110</y>
-              <width>291</width>
-              <height>141</height>
+              <x>20</x>
+              <y>70</y>
+              <width>231</width>
+              <height>121</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_3">
              <property name="sizeConstraint">
-              <enum>QLayout::SetMinAndMaxSize</enum>
+              <enum>QLayout::SetDefaultConstraint</enum>
              </property>
              <property name="rightMargin">
-              <number>3</number>
+              <number>0</number>
              </property>
              <property name="spacing">
               <number>0</number>
              </property>
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_13">
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_14">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -471,7 +592,7 @@ QPushButton:hover{
                 <string notr="true">color:#FFF</string>
                </property>
                <property name="text">
-                <string>NOME:</string>
+                <string>LOTAÇÃO:</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -485,8 +606,16 @@ QPushButton:hover{
                </property>
               </widget>
              </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_14">
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_11">
+               <property name="styleSheet">
+                <string notr="true">background-color:#fff
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_13">
                <property name="font">
                 <font>
                  <pointsize>11</pointsize>
@@ -496,25 +625,110 @@ QPushButton:hover{
                 <string notr="true">color:#FFF</string>
                </property>
                <property name="text">
-                <string>SOBRENOME:</string>
+                <string>DESCRIÇÃO:</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
               </widget>
              </item>
-             <item row="1" column="1">
-              <widget class="QLineEdit" name="lineEdit_11">
-               <property name="styleSheet">
-                <string notr="true">background-color:#fff
-</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QPushButton" name="botao4_6">
-               <property name="styleSheet">
-                <string notr="true">QPushButton{
+            </layout>
+           </widget>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>90</y>
+              <width>82</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SALA 1</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>110</y>
+              <width>82</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SALA 2</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>130</y>
+              <width>121</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SALA DE CAFÉ</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_4">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>150</y>
+              <width>121</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="text">
+             <string>SALA DE CAFÉ 2</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="botao4_6">
+            <property name="geometry">
+             <rect>
+              <x>260</x>
+              <y>170</y>
+              <width>111</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
 	background-color:rgb(13, 9, 22);
 	color:white;
 	border:1px solid;
@@ -523,13 +737,10 @@ QPushButton:hover{
 	background-color:rgb(255,255,0);
 	color:black;
 }</string>
-               </property>
-               <property name="text">
-                <string>REGISTAR</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
+            </property>
+            <property name="text">
+             <string>REGISTAR</string>
+            </property>
            </widget>
           </widget>
          </widget>
@@ -549,6 +760,92 @@ QPushButton:hover{
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="QTableWidget" name="tableWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>90</y>
+              <width>391</width>
+              <height>221</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="botao4_8">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>50</y>
+              <width>196</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color:rgb(13, 9, 22);
+	color:white;
+	border:1px solid;
+}
+QPushButton:hover{
+	background-color:rgb(255,255,0);
+	color:black;
+}</string>
+            </property>
+            <property name="text">
+             <string>CONSULTAR</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>10</y>
+              <width>318</width>
+              <height>19</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QRadioButton" name="radioButton_5">
+               <property name="styleSheet">
+                <string notr="true">COLOR:#fff</string>
+               </property>
+               <property name="text">
+                <string>SALA 1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_6">
+               <property name="styleSheet">
+                <string notr="true">COLOR:#fff</string>
+               </property>
+               <property name="text">
+                <string>SALA 2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_7">
+               <property name="styleSheet">
+                <string notr="true">COLOR:#fff</string>
+               </property>
+               <property name="text">
+                <string>SALA_CAFÉ_1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_8">
+               <property name="styleSheet">
+                <string notr="true">COLOR:#fff</string>
+               </property>
+               <property name="text">
+                <string>SALA_CAFÉ_2</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
          </widget>
          <widget class="QWidget" name="page5">
@@ -567,6 +864,79 @@ QPushButton:hover{
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="QPushButton" name="botao4_9">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>310</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color:rgb(13, 9, 22);
+	color:white;
+	border:1px solid;
+}
+QPushButton:hover{
+	background-color:rgb(255,255,0);
+	color:black;
+}</string>
+            </property>
+            <property name="text">
+             <string>SWITCH</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>230</y>
+              <width>431</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#FFF</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="lineWidth">
+             <number>8</number>
+            </property>
+            <property name="midLineWidth">
+             <number>1</number>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Para estimular a troca de conhecimentos, metade das pessoas &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;precisam trocar de sala entre as duas etapas do treinamento.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Para fazer essa troca basta pressionar o botão abaixo:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="openExternalLinks">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByMouse</set>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>431</width>
+              <height>201</height>
+             </rect>
+            </property>
+           </widget>
           </widget>
          </widget>
         </widget>
