@@ -2,6 +2,9 @@ Esta aplicação foi construida a partir da linguagem python
 
 pip install PyQt5
 pip install PySide2
+pip install numpy
+pip install pandas
+pip install PySide
 
 apenas para demonstrar o funcionamento da aplicação testaremos com 20 convidados
 

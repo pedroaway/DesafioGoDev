@@ -180,6 +180,10 @@ class Ui_MainWindow(object):
         self.label_12.setStyleSheet("color:#FFF")
         self.label_12.setAlignment(QtCore.Qt.AlignCenter)
         self.label_12.setObjectName("label_12")
+        self.textEdit = QtWidgets.QTextEdit(self.frame)
+        self.textEdit.setGeometry(QtCore.QRect(120, 210, 211, 121))
+        self.textEdit.setStyleSheet("color:#FFF")
+        self.textEdit.setObjectName("textEdit")
         self.TELAS.addWidget(self.page1)
         self.page2 = QtWidgets.QWidget()
         self.page2.setObjectName("page2")
@@ -224,11 +228,6 @@ class Ui_MainWindow(object):
         self.label_16.setStyleSheet("color:#FFF")
         self.label_16.setAlignment(QtCore.Qt.AlignCenter)
         self.label_16.setObjectName("label_16")
-        self.tableWidget = QtWidgets.QTableWidget(self.frame_2)
-        self.tableWidget.setGeometry(QtCore.QRect(70, 180, 331, 131))
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(0)
-        self.tableWidget.setRowCount(0)
         self.TELAS.addWidget(self.page2)
         self.page3 = QtWidgets.QWidget()
         self.page3.setObjectName("page3")
@@ -421,6 +420,11 @@ class Ui_MainWindow(object):
         self.botao4_5.setText(_translate("MainWindow", "REGISTAR"))
         self.label_11.setText(_translate("MainWindow", "NOME:"))
         self.label_12.setText(_translate("MainWindow", "SOBRENOME:"))
+        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.botao4_7.setText(_translate("MainWindow", "CONSULTAR"))
         self.label_15.setText(_translate("MainWindow", "SOBRENOME"))
         self.label_16.setText(_translate("MainWindow", "NOME:"))
