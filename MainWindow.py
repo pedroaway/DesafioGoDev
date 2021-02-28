@@ -14,27 +14,23 @@ class MainWindow:
         self.Dados = []
         self.Salas = []
         self.tabela = self.frame()
-
+        self.distribuir = ['sala1', 'sala2', 'café1', 'café2']
 
 
 #BOTÕES PARA MUDAR AS PÁGINAS NA APLICAÇÃO
-
-        self.ui.TELAS.setCurrentWidget(self.ui.page1)
+        self.ui.TELAS.setCurrentWidget(self.ui.page3)
         self.ui.botao1.clicked.connect(self.showtela1)
         self.ui.botao2.clicked.connect(self.showtela2)
         self.ui.botao3.clicked.connect(self.showtela3)
         self.ui.botao4.clicked.connect(self.showtela4)
         self.ui.botao5.clicked.connect(self.showtela5)
-#BOTAO TELA 1
+#BOTÕES DE INTERAÇÃO
         self.ui.botao4_5.clicked.connect(self.cadastrarparticipantes)
-        self.ui.botao4_5.clicked.connect(self.frame)
         self.ui.botao4_5.clicked.connect(self.mostrarframe)
-#BOTAO TELA 3
+        self.ui.botao4_6.clicked.connect(self.cadastrarsalas)
+        self.ui.botao4_6.clicked.connect(self.frameSalas)
+        self.ui.botao4_6.clicked.connect(self.mostrar_frame_salas)
 
-#EXIBIR PARTICIPANTES
-
-       # self.ui.botao4_6.clicked.connect(self.cadastrarsalas)
-#EXTRAÇÃO DE DADOS
 
 #FUNÇÕES QUE CONECTAM OS BOTÕES COM AS PÁGINAS E FAZEM A MUDANÇA
     def show(self):
@@ -50,8 +46,6 @@ class MainWindow:
     def showtela5(self):
         self.ui.TELAS.setCurrentWidget(self.ui.page5)
 
-
-#TELA1
     def cadastrarparticipantes(self):
         NomeParticipante = self.ui.lineEdit_8.text()
         SobrenomeParticipante = self.ui.lineEdit_9.text()
@@ -59,44 +53,44 @@ class MainWindow:
         self.Dados.append(linha)
         print(self.Dados)
 
+    def cadastrarsalas(self):
+        descricao = []
+        lotacao = self.ui.lineEdit_11.text()
+        objeto = [descricao, lotacao]
+
+        if self.ui.radioButton.isChecked():
+            descricao.append('sala1')
+        elif self.ui.radioButton_2.isChecked():
+            descricao.append('sala2')
+        elif self.ui.radioButton_3.isChecked():
+            descricao.append('café1')
+        elif self.ui.radioButton_4.isChecked():
+            descricao.append('café2')
+        else:
+            descricao.append('sala não cadastrada')
+        self.Salas.append(objeto)
 
 
+#DATA-FRAMES
     def frame(self):
         lstDados = self.Dados
-        dfa = pd.DataFrame(columns=['__Nome__   ', '   __Nobrenome__', 'sala1', 'sala1', 'café2'], data=lstDados)
+        dfa = pd.DataFrame(columns=['nome',' sobrenome',], data=lstDados)
         return dfa
 
-#TELA2
+    def frameSalas(self):
+        lstDados = self.Salas
+        dfa = pd.DataFrame(columns=['descrição',' lotação'], data=lstDados)
+        return dfa
+#FUNÇÕES PARA MOSTRAR OS DATA-FRAMES
     def mostrarframe(self):
         dcr = self.frame()
-        print(dcr)
         self.ui.textEdit.setText(str(dcr))
 
+    def mostrar_frame_salas(self):
+        dcr = self.frameSalas()
+        self.ui.textEdit_3.setText(str(dcr))
 
 
-#TELA3
-    def cadastrarsalas(self):
-        descricao = self.ui.lineEdit_10.text()
-        lotacao = self.ui.lineEdit_11.text()
-        tipo = "indefinido"
-        if self.ui.radioButton.isChecked():
-            tipo = ("Sala1")
-        elif self.ui.radioButton_2.isChecked():
-            tipo = ("Sala2")
-        elif self.ui.radioButton_3.isChecked():
-            tipo = ("Saladecafé1")
-        elif self.ui.radioButton_4.isChecked():
-            tipo = ("Saladecafé2")
-
-        item = [descricao, lotacao, tipo]
-        self.Salas.append(item)
-        return self.Salas
-
-#DATA_FRAME
-
-
-
-   #
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     main_win = MainWindow()

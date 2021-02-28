@@ -1,16 +1,14 @@
-Esta aplicação foi construida a partir da linguagem python
+Esta aplicação foi construida a partir da linguagem python na versão 3.9.1
 
+-dependências
 pip install PyQt5
 pip install PySide2
-pip install numpy
 pip install pandas
-pip install PySide
 
-apenas para demonstrar o funcionamento da aplicação testaremos com 20 convidados
+-Caso for nescessáro, instalar fonte de texto 'Cyberpuk' contida no repositório.
+
+-Depois de instaladas essa dependências basta rodar o arquivo MainWindow em python.
 
 
-(código escrito na versão 3.9.1 do python)
-#####Para converter o arquivo .ui para .py foi ultilizado o comando#####
 
-pyuic5 Input_Name.ui -o Output_Name.py
 
